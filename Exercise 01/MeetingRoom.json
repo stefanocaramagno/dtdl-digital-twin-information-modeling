@@ -1,0 +1,15 @@
+{
+   "@id": "dtmi:example:MeetingRoom;1",
+   "@type": "Interface",
+   "extends": "dtmi:example:Room;1",
+   "displayName": "MeetingRoom",
+   "contents": [
+      {
+         "@type": "Property",
+         "name": "occupied",
+         "schema": "boolean",
+         "writable": true
+      }
+   ],
+   "@context": "dtmi:dtdl:context;2"
+}

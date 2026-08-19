@@ -1,0 +1,31 @@
+{
+    "@id": "dtmi:example:aula;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Aula",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idAula",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "capienzaMassima",
+            "schema": "integer"
+        },
+        {
+            "@type": "Relationship",
+            "name": "contains",
+            "displayName": "contains",
+            "target": "dtmi:example:condizionatore;1",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "dataDiMontaggio",
+                    "schema": "dateTime"
+                }
+            ]
+        }
+    ]
+}
