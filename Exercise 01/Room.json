@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:example:Room;1",
+  "@type": "Interface",
+  "displayName": "Room",
+  "contents": [
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "TemperatureSensorValue",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable":true
+    },
+    {
+      "@type": ["Property", "RelativeHumidity"],
+      "name": "HumiditySensorValue",
+      "schema": "integer",
+      "unit": "percent",
+      "writable":true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+    "@id": "dtmi:example:cucina;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Cucina",
+    "extends": "dtmi:example:stanza;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "numeroScaffali",
+            "schema": "integer"
+        }
+    ]
+}

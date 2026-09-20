@@ -1,0 +1,41 @@
+{
+    "@id": "dtmi:example:scuola;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Scuola",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idScuola",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "nomeScuola",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "numeroStudenti",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "numeroMaschi",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "numeroFemmine",
+                        "schema": "integer"
+                    }          
+                ]
+            }
+        },
+        {
+            "@type": "Relationship",
+            "name": "contains",
+            "displayName": "contains",
+            "target": "dtmi:example:aula;1"
+        }
+    ]
+}

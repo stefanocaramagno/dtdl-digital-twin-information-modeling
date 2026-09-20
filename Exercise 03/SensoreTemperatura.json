@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:example:sensoreTemperatura;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Sensore Temperatura",
+  "contents": [
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "temperaturaRilevata",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    }
+  ]
+}

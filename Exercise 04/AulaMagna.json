@@ -1,0 +1,14 @@
+{
+    "@id": "dtmi:example:aulaMagna;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:example:aula;1",
+    "displayName": "Aula Magna",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "numeroPoltrone",
+            "schema": "integer"
+        }
+    ]
+}

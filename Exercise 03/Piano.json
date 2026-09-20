@@ -1,0 +1,24 @@
+{
+    "@id": "dtmi:example:piano;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Piano",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idPiano",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "numeroAppartamenti",
+            "schema": "integer"
+        },
+        {
+            "@type": "Relationship",
+            "name": "contains",
+            "displayName": "contains",
+            "target": "dtmi:example:appartamento;1"
+        }
+    ]
+}

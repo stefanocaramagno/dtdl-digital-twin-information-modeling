@@ -1,0 +1,31 @@
+{
+  "@id": "dtmi:example:appartamento;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Appartamento",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "idAppartamento",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "numeroStanze",
+      "schema": "integer"
+    },
+    {
+      "@type": "Relationship",
+      "name": "contains",
+      "displayName": "contains",
+      "target": "dtmi:example:stanza;1",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "dataAssegnazione",
+          "schema": "date"
+        }
+      ]
+    }
+  ]
+}

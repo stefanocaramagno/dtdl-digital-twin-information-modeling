@@ -1,0 +1,23 @@
+{
+    "@id": "dtmi:example:condizionatore;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Condizionatore",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idCondizionatore",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "temperaturaImpostata",
+            "schema": "float"
+        },
+        {
+            "@type": "Component",
+            "name": "sensoreTemperatura",
+            "schema": "dtmi:example:sensoreTemperatura;1"
+        }
+    ]
+}
